@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LMS Platform – Udemy‑style Course Builder and Player
 
-## Getting Started
+Create, publish, and learn from courses with a modern LMS built on Next.js 15, React 19, Tailwind CSS 4, Prisma, and MySQL. Includes payments (Stripe), auth (Clerk), uploads (UploadThing), and video processing/streaming (Mux).
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs) ![React](https://img.shields.io/badge/React-19-149eca?logo=react) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma) ![MySQL](https://img.shields.io/badge/MySQL-DB-005E86?logo=mysql&logoColor=white) ![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?logo=stripe&logoColor=white) ![Clerk](https://img.shields.io/badge/Clerk-Auth-5A67D8) ![Mux](https://img.shields.io/badge/Mux-Video-FF1F2D) ![UploadThing](https://img.shields.io/badge/UploadThing-Uploads-111827)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Student experience
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Browse & filter courses by category
+- Purchase courses securely via Stripe Checkout
+- Track progress (chapter completion + overall course progress)
+- HLS video playback powered by Mux
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Teacher experience
 
-## Learn More
+- Dedicated teacher dashboard and “teacher mode”
+- Create and manage courses and chapters
+- Drag‑and‑drop chapter reordering
+- Upload thumbnails, attachments, and videos (UploadThing)
+- Rich text editor for chapter descriptions
+- Publish/unpublish workflows
 
-To learn more about Next.js, take a look at the following resources:
+Platform
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Authentication and user management with Clerk
+- MySQL + Prisma ORM
+- Modern UI (Radix UI + Tailwind CSS), dark‑mode ready
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧱 Tech Stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 15 (App Router) + React 19
+- Tailwind CSS 4
+- Prisma ORM + MySQL
+- Stripe (Checkout + Webhooks)
+- Clerk (Auth)
+- UploadThing (file uploads)
+- Mux (video ingest + HLS streaming)
+- Shadcn/Radix UI components, Zustand, Zod, React Hook Form
